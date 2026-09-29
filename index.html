@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'none'; base-uri 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nông sản Tươi – Đặt hàng online</title>
+<title>Cơm nắm FKC – Đặt hàng online</title>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f2f6f1;--card:#fff;--ink:#16211a;--mute:#5d6b62;--line:#dbe4da;--acc:#1f5c3f;--acc-ink:#fff;--hot:#d9480f;
@@ -109,7 +109,7 @@ a.pk{display:block}
 </head>
 <body>
 <header>
-  <h1>Nông sản Tươi</h1>
+  <h1>Cơm nắm FKC</h1>
   <p>Chọn số lượng, tổng tiền tự cập nhật. Giao hàng toàn quốc.</p>
   <div class="tabs" role="group" aria-label="Chọn kênh">
     <button id="tb" aria-pressed="true">Mua hàng</button>
@@ -389,7 +389,7 @@ let O=[];
 try{O=JSON.parse(localStorage.getItem("orders")||"[]")}catch(e){}
 const save=()=>{try{localStorage.setItem("orders",JSON.stringify(O))}catch(e){}};
 /* Dán link Google Apps Script (đuôi /exec) vào đây để đơn tự chạy thẳng sang người bán. Xem hướng dẫn kèm theo. */
-const ENDPOINT="";
+const ENDPOINT="https://script.google.com/macros/s/AKfycbw2gI1s8UQ5TjwQVKny8AWYOnuLECVivMHrZrFh99eKsQjyCVWBneP5uPxWlHjaRGMReg/exec";
 /* Thông tin nhận chuyển khoản (điền để khách thấy khi chọn "Thanh toán luôn") */
 const BANK={bank:"",acc:"",name:""};
 let KEY="";
